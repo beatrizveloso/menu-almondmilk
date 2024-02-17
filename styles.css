@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #EDECE4;
+    border: 10px solid #CBC6B9;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    height: 876px;
+}
+
+span {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.paragraph {
+    font-size: 18px;
+    color: black;
+}
+
+.makerGreen {
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    background-color: #1AB912;
+}
+
+.textHours {
+    width: 318px;
+    height: 82px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 60px;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+
+}
+
+.textLocation {
+    width: 318px;
+    height: 82px;
+    border-right: 2px solid black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
