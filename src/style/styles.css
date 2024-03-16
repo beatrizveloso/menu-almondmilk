@@ -14,6 +14,7 @@ body {
     background-color: #EDECE4;
     border: 10px solid #CBC6B9;
 }
+
 main {
     display: flex;
     justify-content: space-between;
@@ -22,46 +23,41 @@ main {
     margin-top: 77px;
 }
 
-main > div{
-    background-color: #EDECE4;
-    width: 100%;
-}
-
 span {
     display: flex;
     align-items: center;
     gap: 30px;
 }
 
-.paragraph {
+p {
     font-size: 18px;
     color: black;
 }
 
-.makerGreen {
+.marker-green {
     width: 12px;
     height: 12px;
     border-radius: 12px;
-    background-color: #1AB912;
+    background-color: green;
 }
 
-.textHours {
+.time-work {
     width: 318px;
     height: 82px;
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
     border-bottom: 2px solid black;
     border-right: 2px solid black;
 }
 
-.textLocation {
+.text-location {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 318px;
     height: 82px;
     border-right: 2px solid black;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
 }
 
 .text-decoration {
@@ -69,18 +65,18 @@ span {
     font-size: 18px;
 }
 
-.textWrapper {
+.hero-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    gap: 30px;
 }
 
-.textWrapper > img {
+.hero-wrapper > img {
     width: 200px;
     height: 200px;
 }
 
-.textWrapper > h1 {
+.hero-wrapper > h1 {
     font-size: 200px;
 }
 
@@ -92,8 +88,8 @@ main > img {
 section {
     display: flex;
     width: 1000px;
+    margin-bottom: 100px;
     gap: 60px;
-    margin-bottom: 120px;
 }
 
 .title-section {
@@ -118,7 +114,7 @@ article > p, li > p {
     font-size: 18px;
     font-family: 'PT Mono', sans-serif;
     color: black;
-    height: 18px;
+    height: 14px;
 }
 
 li {
@@ -142,7 +138,7 @@ li {
 menu {
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: space-between;  
     gap: 30px;
     width: 100%;
     height: 300px;
@@ -171,7 +167,7 @@ form {
     flex-direction: column;
 }
 
-form > div{
+form > div {
     display: flex;
     width: 100%;
     gap: 20px;
@@ -179,7 +175,7 @@ form > div{
 
 div > .column {
     display: flex;
-    flex-grow: 2;
+    flex-grow: 1;
 }
 
 div > .column:last-child {
@@ -193,13 +189,13 @@ div > .column:last-child {
 
 input {
     height: 40px;
-    border: 2px solid #988C77;
+    border: 3px solid #988C77;
     background-color: transparent;
-    display: flex;
+    width: 100%;
 }
 
 textarea {
-    border: 2px solid #988C77;
+    border: 3px solid #988C77;
     background-color: transparent;
 }
 
@@ -207,7 +203,7 @@ button {
     width: 200px;
     height: 40px;
     background-color: transparent;
-    border: 2px solid #988C77;
+    border: 3px solid #988C77;
     color: #988C77;
     font-size: 18px;
     box-shadow: 5px 5px 0px -2px #CBC6B9, 5px 5px 0px #988C77;
@@ -222,6 +218,7 @@ form > div:last-child {
     justify-content: space-between;
     margin-top: 21px;
 }
+
 iframe {
     width: 100%;
     height: 100%;
@@ -238,9 +235,34 @@ footer {
     justify-content: space-around;
     width: 100%;
     height: 70px;
-    background-color: #242426;
+    background-color: #2A2426;
     color: #EDECE4;
     font-size: 18px;
-    align-items:center;
-    box-shadow: 0px 0px 0px 10px #242426;
+    align-items: center;
+    box-shadow: 0px 0px 0px 10px #2A2426;
+}
+
+@media (max-width: 520px) {
+
+
+    main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+
+    main > img {
+        display: none;
+        }
+
+
+    .hero-wrapper > img {
+        align-self: center;
+    }
+
+    .hero-wrapper :nth-child(4) {
+        font-size: 100px;
+    }
 }
