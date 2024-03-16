@@ -11,8 +11,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #EDECE4;
-    border: 10px solid #CBC6B9;
+    background-color: #FDE8E1;
+    border: 10px solid #E6CCCD;
 }
 
 main {
@@ -38,7 +38,7 @@ p {
     width: 12px;
     height: 12px;
     border-radius: 12px;
-    background-color: green;
+    background-color: #7CD377;
 }
 
 .time-work {
@@ -61,8 +61,12 @@ p {
 }
 
 .text-decoration {
-    color: #988C77;
+    color: #C29A9B;
     font-size: 18px;
+}
+
+.bar {
+    color: #624343
 }
 
 .hero-wrapper {
@@ -122,7 +126,7 @@ li {
     align-items: center;
     gap: 10px;
     list-style: none;
-    color: #988C77;
+    color: #C29A9B;
     font-family: 'Aref Ruqaa', sans-serif;
     font-size: 18px;
     padding-bottom: 12px;
@@ -133,6 +137,7 @@ li {
     font-family: 'Aref Ruqaa', sans-serif;
     padding-bottom: 26px;
     padding-left: 50px;
+    color: #624343;
 }
 
 menu {
@@ -189,13 +194,13 @@ div > .column:last-child {
 
 input {
     height: 40px;
-    border: 3px solid #988C77;
+    border: 3px solid #C29A9B;
     background-color: transparent;
     width: 100%;
 }
 
 textarea {
-    border: 3px solid #988C77;
+    border: 3px solid #C29A9B;
     background-color: transparent;
 }
 
@@ -203,10 +208,10 @@ button {
     width: 200px;
     height: 40px;
     background-color: transparent;
-    border: 3px solid #988C77;
-    color: #988C77;
+    border: 3px solid #C29A9B;
+    color: #C29A9B;
     font-size: 18px;
-    box-shadow: 5px 5px 0px -2px #CBC6B9, 5px 5px 0px #988C77;
+    box-shadow: 5px 5px 0px -2px #e8bcbc, 5px 5px 0px #C29A9B;
 }
 
 label {
@@ -226,7 +231,7 @@ iframe {
 
 map {
     height: 226px;
-    box-shadow: 0px 0px 0px 10px #CBC6B9;
+    box-shadow: 0px 0px 0px 10px #dab6b7;
     margin-top: 60px;
 }
 
@@ -235,16 +240,18 @@ footer {
     justify-content: space-around;
     width: 100%;
     height: 70px;
-    background-color: #2A2426;
+    background-color: #624343;
     color: #EDECE4;
     font-size: 18px;
     align-items: center;
-    box-shadow: 0px 0px 0px 10px #2A2426;
+    box-shadow: 0px 0px 0px 10px #624343;
 }
 
 footer > p {
+    font-size: 16px;
     color: #EDECE4;
 }
+
 @media (max-width: 520px) {
 
 
@@ -308,10 +315,6 @@ footer > p {
     map {
          width: 90%;
          align-self: center;
-    }
-
-    footer > img {
-        display: none;
     }
 }
 
